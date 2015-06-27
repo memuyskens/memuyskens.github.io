@@ -1,0 +1,61 @@
+body {
+	background: #2c2c2c;
+	margin: 0px auto;
+	padding: 0px;
+	color: white;
+	font-family: 'Oxygen', sans-serif;
+}
+
+#header {
+	background-image: url("header.jpeg");
+	background-position: center;
+	background-size: cover;
+	height: 240px;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Handlee', cursive;
+}
+
+#header h1 {
+	color: white;
+	font-size: 32px;
+	margin-top: 0px;
+	margin-left: 10px;
+	position: relative;
+	top: 110px;
+}
+
+.navbar {
+	background: rgba(56,97,121,0.8);
+	padding: 10px;
+	margin: 0px;
+	text-align: center;
+	position: relative;
+	top: 92px;
+}
+
+.navbar li {
+	display: inline;
+	margin: 0 12px;
+	padding: 10px 6px;
+}
+
+.navbar li:hover {
+	background: #4b7289;
+}
+
+.navbar a {
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+#content {
+	margin: 30px auto;
+	text-align: center;
+}
+
+#content p {
+	font-size: 16px;
+	line-height: 24px;
+}
