@@ -7,8 +7,8 @@ body {
 }
 
 #header {
-	background-image: url("header.jpeg");
-	background-position: center;
+	background-image: url("Ludington.jpg");
+	background-position: center 62%;
 	background-size: cover;
 	height: 240px;
 	margin: 0px;
@@ -20,9 +20,10 @@ body {
 	color: white;
 	font-size: 32px;
 	margin-top: 0px;
-	margin-left: 10px;
+	margin-left: 32px;
 	position: relative;
-	top: 110px;
+	top: 112px;
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.25);
 }
 
 .navbar {
