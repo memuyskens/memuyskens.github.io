@@ -1,15 +1,21 @@
 body {
 	background-color: #303030;
-	color: white;
-	margin: 0 auto;
+	margin: 0;
+	padding: 0;
 	font-family: 'Oxygen', sans-serif;
+	color: white;
 }
+
 #navbar {
-	background-color: #777777;
-	font-family: 'Handlee', cursive;
-	margin: 0 0 16px 0;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
 	height: 64px;
+	background-color: rgba(125,125,125,0.95);
+	font-family: 'Handlee', cursive;
 }
+
 #helmet {
 	height: 40px;
 	width: 36px;
@@ -17,20 +23,24 @@ body {
 	left: 56px;
 	top: 6px;
 }
+
 #navbar h1 {
 	float: left;
 	margin: 16px 0 0 70px;
 	font-size: 34px;
 }
+
 #navbar ul {
 	list-style-type: none;
 	float: right;
 	margin: 0;
 }
+
 #navbar li {
 	display: inline;
 	float: left; /*changing from left & right flips the elements*/
 }
+
 #navbar a:link, a:visited {
 	display: block; /*display block makes the entire area clickable*/
 	width: 110px;
@@ -41,27 +51,38 @@ body {
 	color: white;
 	text-decoration: none;
 }
+
 #exp:link, #exp:visited {
 	background-color: rgba(200,100,50,1);
 }
+
 #exp:hover, #exp:active {
 	background-color: #df743a;
 }
+
 #edu:link, #edu:visited {
 	background-color: rgba(150,200,50,1);
 }
+
 #edu:hover, #edu:active {
 	background-color: #addf3a;
 }
+
 #res:link, #res:visited {
 	background-color: rgba(150,100,200,1);
 }
+
 #res:hover, #res:active {
 	background-color: #ad74df;
 }
+
 #content {
+	max-width: 500px;
+	padding-top: 80px;
+	margin: 0 auto;
 	text-align: center;
 }
+
 #me {
 	width: 140px;
 	height: 140px;
@@ -70,33 +91,40 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
 h2 {
 	margin: 14px 0 -6px 0;
 	font-family: 'Handlee', cursive;
 	font-size: 21px;
 	color: rgba(150,200,50,1);
 }
+
 p {
 	font-size: 14px;
 	line-height: 20px;
+	/*word-break: break-all; <-- this does line breaks in the middle of words*/
 }
+
 #email, #linkedin, #twitter {
 	margin: 0 5px;
 	width: 40px;
 	height: 40px;
 }
+
 #email:hover {
 	margin: -10px 3px 0 3px;
 	background-color: rgba(200,100,50,1);
 	border: 2px solid rgba(200,100,50,1);
 	border-radius: 40px;
 }
+
 #linkedin:hover {
 	margin: -10px 3px 0 3px;
 	background-color: rgba(150,200,50,1);
 	border: 2px solid rgba(150,200,50,1);
 	border-radius: 40px;
 }
+
 #twitter:hover {
 	margin: -10px 3px 0 3px;
 	background-color: rgba(150,100,200,1);
