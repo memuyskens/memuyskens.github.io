@@ -1,46 +1,101 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Morgan Muyskens</title>
 	<link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<!--<link rel="stylesheet" type="text/css" href="main.css">-->
 	<style>
-		h2 {
-			font-size: 20px;
-		}
-		img {
-			width: 200px;
-			height: 150px;
-			border: 2px solid white;
-			border-radius: 44px;
-			margin-left: 8px;
-			float: right;
-		}
-		#content {
-			max-width: 650px;
-		}
+	body {
+		background: #303030;
+		color: #ffffff;
+		margin: 0 auto;
+		font-family: 'Oxygen', sans-serif;
+	}
+	#navbar {
+		background: #777777;
+		font-family: 'Handlee', cursive;
+		margin: 0 0 26px 0;
+		height: 64px;
+	}
+	#helmet {
+		height: 40px;
+		width: 36px;
+		position: relative;
+		top: 7px;
+		left: -266px;
+	}
+	#navbar h1 {
+		margin: 18px 0 0 58px;
+		padding: 0;
+		float: left;
+		display: inline;
+	}
+	#navbar ul {
+		display: inline;
+		float: right;
+		margin: 24px 0;
+		padding: 0;
+	}
+	#navbar li {
+		display: inline;
+		padding: 24px 20px 19px 20px;
+	}
+	#exp {
+		background: #cc6633;
+	}
+	#edu {
+		background: #99cc33;
+	}
+	#res {
+		background: #9966cc;
+	}
+	#navbar a {
+		color: #ffffff;
+		text-decoration: none;
+	}
+	#content {
+		text-align: center;
+	}
+	#me {
+		width: 140px;
+		height: 140px;
+		border: 2px solid white;
+		border-radius: 100px;
+		margin: 0;
+		padding: 0;
+	}
+	h2 {
+		font-size: 16px;
+	}
+	p {
+		font-size: 14px;
+		line-height: 20px;
+	}
 	</style>
 </head>
-
 <body>
-	<div id="header">
-		<h1>My name is<br/>Morgan Muyskens</h1>
-		<ul class="navbar">
-			<li><a href="about.html">About</a></li>
-			<li><a href="education.html">Education</a></li>
-			<li><a href="experience.html">Experience</a></li>
-			<li><a href="Resume.pdf">Resume</a></li>
-			<li><a href="contact.html">Contact</a></li>
+	<div id="navbar">
+		<img id="helmet" src="msu_helmet.png"/>
+		<h1>Morgan Muyskens</h1>
+		<ul>
+			<li id="exp"><a href="experience.html">Experience</a>
+			<li id="edu"><a href="education.html">Education</a>
+			<li id="res"><a href="resume.html">Resume</a></li>
+			<!--Note that it's valid HTML to omit closing li tags when there are elements that follow the previous in the list. This was done to eliminate spacing between them.-->
 		</ul>
 	</div>
 	<div id="content">
-		<h2>Thanks for visiting!</h2>
-		<img src="me2.jpg" alt="Me"/>
-		<p>I&#8217;m a <span style="color: #5a9ec5">computer science</span> major studying at<br /><span style="color: #6cca60">Michigan State University</span> who&#8217;s looking to make<br />it big in the world.</p>
-		<p>Maybe <span style="color: #eb4f4f"><strong>you</strong></span> could help?</p>
-		<p>Right now I know <span style="color: #ecd244">Python</span>, <span style="color: #5a9ec5">Html</span>, <span style="color: #eb834f">CSS</span>, and a hodgepodge of other relevant computer knowledge- all of which you can discover through viewing my education page.</p>
-		<p>Check out everything I&#8217;ve got to offer by clicking any of the links above.</p>
+		<img src="me.jpg" id="me"/>
+		<h2>Thanks for stoping by!</h2>
+		<p>My name is Morgan.<br />I'm a sophomore computer science major at<br />Michigan State University, located in East Lansing, MI.</p>
+		<p>When I'm not grooving away on bass guitar, watching movies,<br />or slaving through homework, I guarantee you<br />I'm geeking out on my macbook.</p>
+		<p>I may even be coding.<br /><span style="color: #cc6633">Python</span> - <span style="color: #99cc33">HTML/CSS</span> - <span style="color: #9966cc">C++</span></p>
+		<p>You can learn all about my work and education<br />by traveling through the links above.</p>
+		<p>Or you can send me a message.</p>
+		<img src="email.png" />
+		<img src="linkedin.png" />
+		<img src="twitter.png" />
 	</div>
 </body>
 </html>
