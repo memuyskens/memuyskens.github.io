@@ -45,9 +45,9 @@ body {
 	display: block; /*display block makes the entire area clickable*/
 	width: 110px;
 	margin: 0;
-	padding: 20px 0;
+	padding: 19px 0;
 	text-align: center;
-	font-size: 18px;
+	font-size: 19px;
 	color: white;
 	text-decoration: none;
 }
@@ -84,23 +84,23 @@ body {
 }
 
 #me {
-	width: 140px;
-	height: 140px;
-	border: 2px solid white;
-	border-radius: 100px;
+	width: 150px;
+	height: 150px;
+	border: 3px solid white;
+	border-radius: 150px;
 	margin: 0;
 	padding: 0;
 }
 
 h2 {
-	margin: 14px 0 -6px 0;
+	margin: 12px 0 -8px 0;
 	font-family: 'Handlee', cursive;
 	font-size: 21px;
 	color: rgba(150,200,50,1);
 }
 
 p {
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 20px;
 	/*word-break: break-all; <-- this does line breaks in the middle of words*/
 }
