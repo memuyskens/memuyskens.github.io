@@ -1,5 +1,8 @@
 body {
-	background-color: #303030;
+	background-image: url(Ludington.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	margin: 0;
 	padding: 0;
 	font-family: 'Oxygen', sans-serif;
@@ -11,23 +14,16 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 64px;
-	background-color: rgba(125,125,125,0.95);
+	height: 54px;
+	background: rgba(0,0,0,0.70);
 	font-family: 'Handlee', cursive;
-}
-
-#helmet {
-	height: 40px;
-	width: 36px;
-    position: absolute;
-	left: 56px;
-	top: 6px;
 }
 
 #navbar h1 {
 	float: left;
-	margin: 16px 0 0 70px;
+	margin: 8px 0 0 70px;
 	font-size: 34px;
+	color: white;
 }
 
 #navbar ul {
@@ -45,47 +41,39 @@ body {
 	display: block; /*display block makes the entire area clickable*/
 	width: 110px;
 	margin: 0;
-	padding: 19px 0;
+	padding: 14px 0;
 	text-align: center;
 	font-size: 19px;
 	color: white;
 	text-decoration: none;
 }
 
-#exp:link, #exp:visited {
-	background-color: rgba(200,100,50,1);
+#edu:hover, #edu:active {
+	background: rgba(230,120,60,0.50);
 }
 
 #exp:hover, #exp:active {
-	background-color: #df743a;
-}
-
-#edu:link, #edu:visited {
-	background-color: rgba(150,200,50,1);
-}
-
-#edu:hover, #edu:active {
-	background-color: #addf3a;
-}
-
-#res:link, #res:visited {
-	background-color: rgba(150,100,200,1);
+	background: rgba(60,180,130,0.50);
 }
 
 #res:hover, #res:active {
-	background-color: #ad74df;
+	background: rgba(90,150,230,0.50);
 }
 
 #content {
-	max-width: 500px;
-	padding-top: 80px;
+	max-width: 750px;
+	position: relative;
+	top: 70px;
 	margin: 0 auto;
+	padding: 10px;
 	text-align: center;
+	background: rgba(0,0,0,0.50);
+	border-radius: 30px;
 }
 
 #me {
-	width: 150px;
-	height: 150px;
+	width: 160px;
+	height: 160px;
 	border: 3px solid white;
 	border-radius: 150px;
 	margin: 0;
@@ -95,39 +83,33 @@ body {
 h2 {
 	margin: 12px 0 -8px 0;
 	font-family: 'Handlee', cursive;
-	font-size: 21px;
-	color: rgba(150,200,50,1);
+	font-size: 30px;
+	color: rgba(60,180,130,1);
 }
 
 p {
-	font-size: 16px;
-	line-height: 20px;
+	font-size: 22px;
+	line-height: 24px;
 	/*word-break: break-all; <-- this does line breaks in the middle of words*/
 }
 
 #email, #linkedin, #twitter {
 	margin: 0 5px;
-	width: 40px;
-	height: 40px;
+	width: 45px;
+	height: 45px;
 }
 
 #email:hover {
-	margin: -10px 3px 0 3px;
-	background-color: rgba(200,100,50,1);
-	border: 2px solid rgba(200,100,50,1);
+	background-color: rgba(230,120,60,1);
 	border-radius: 40px;
 }
 
 #linkedin:hover {
-	margin: -10px 3px 0 3px;
-	background-color: rgba(150,200,50,1);
-	border: 2px solid rgba(150,200,50,1);
+	background-color: rgba(60,180,130,1);
 	border-radius: 40px;
 }
 
 #twitter:hover {
-	margin: -10px 3px 0 3px;
-	background-color: rgba(150,100,200,1);
-	border: 2px solid rgba(150,100,200,1);
+	background-color: rgba(90,150,230,1);
 	border-radius: 40px;
 }
