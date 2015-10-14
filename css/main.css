@@ -1,0 +1,134 @@
+body {
+	background-color: #282828;
+	font-family: Open Sans, sans-serif;
+	font-weight: 300;
+	color: white;
+	font-size: 10px;
+}
+.navbar {
+	border: none;
+	border-radius: 0;
+	margin-bottom: 0;
+	text-align: center;
+}
+.vertical-align {
+	display: flex;
+	align-items: center;
+}
+#namebar {
+	height: 60px;
+}
+#linkbar {
+	background-color: #A5293E;
+	height: 54px;
+}
+.navbar h1 {
+	font-family: Itim, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 4.2em;
+	white-space: nowrap;
+}
+.navbar ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+.navbar li {
+	display: inline;
+}
+.navbar a {
+	font-family: Itim, sans-serif;
+	text-decoration: none;
+	color: white;
+	font-weight: 400;
+	font-size: 2.4em;
+	padding: 8px;
+	padding-left: 14px;
+	border-radius: 10px;
+}
+.navbar a:hover {
+	background-color: rgba(0,0,0,0.16);
+}
+/*.navbar a::after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 1px;
+	width: 0;
+	background: transparent;
+	transition: width .3s ease, background-color .3s ease;
+}
+.navbar a:hover::after {
+	width: 100%;
+	background: #fff;
+}*/
+.navbar .fa {
+	margin-left: .4em;
+}
+.greeting {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-image: url("../LHD.jpg");
+	height: 420px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	border-bottom: 4px solid #A5293E;
+}
+.greeting h2 {
+	margin: 0;
+	font-family: Itim;
+	font-size: 8em;
+}
+#social-media-links {
+	margin: 20px 0 20px 0;
+}
+#social-media-links a {
+	text-decoration: none;
+	color: white;
+}
+#social-media-links a:hover {
+	color: #6D8DAF;
+}
+article {
+	margin: 10px 0;
+}
+.content-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 60px;
+	background-color: #213A54;
+}
+.content-container {
+	display: flex;
+	align-items: center;
+	background-color: #6D8DAF;
+	height: 400px;
+}
+.content-header h3 {
+	margin: 0;
+}
+
+@media only screen and (max-width: 820px) {
+	.navbar h1 {
+		font-size: 3.8em;
+	}
+	.navbar a {
+		font-size: 2em;
+	}
+}
+/*
+@media only screen and (max-width: 1000px) {
+
+}
+@media only screen and (max-width: 900px) {
+
+}
+@media only screen and (max-width: 870px) {
+THIS IS WHERE YOU'LL ADD THE HAMBURGER ICON
+}*/
