@@ -1,5 +1,5 @@
 $(document).ready( function() {
-	$('.navbar a').hover( function() {
-		$(".navbar .fa").toggleClass("spin");
+	$("#nav-icon").click( function() {
+		$("header > nav").toggleClass("show-menu");
 	});
 });

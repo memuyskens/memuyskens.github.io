@@ -1,134 +1,169 @@
 body {
-	background-color: #282828;
+	background-color: #1F2854;
+	color: white;
 	font-family: Open Sans, sans-serif;
 	font-weight: 300;
-	color: white;
 	font-size: 10px;
 }
-.navbar {
-	border: none;
-	border-radius: 0;
-	margin-bottom: 0;
-	text-align: center;
-}
-.vertical-align {
-	display: flex;
-	align-items: center;
-}
-#namebar {
-	height: 60px;
-}
-#linkbar {
-	background-color: #A5293E;
-	height: 54px;
-}
-.navbar h1 {
-	font-family: Itim, sans-serif;
-	margin: 0;
-	padding: 0;
-	font-size: 4.2em;
-	white-space: nowrap;
-}
-.navbar ul {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: space-around;
-}
-.navbar li {
-	display: inline;
-}
-.navbar a {
-	font-family: Itim, sans-serif;
-	text-decoration: none;
-	color: white;
-	font-weight: 400;
-	font-size: 2.4em;
-	padding: 8px;
-	padding-left: 14px;
-	border-radius: 10px;
-}
-.navbar a:hover {
-	background-color: rgba(0,0,0,0.16);
-}
-/*.navbar a::after {
-	content: '';
-	display: block;
-	margin: auto;
-	height: 1px;
-	width: 0;
-	background: transparent;
-	transition: width .3s ease, background-color .3s ease;
-}
-.navbar a:hover::after {
-	width: 100%;
-	background: #fff;
-}*/
-.navbar .fa {
-	margin-left: .4em;
-}
-.greeting {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	background-image: url("../LHD.jpg");
-	height: 420px;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	border-bottom: 4px solid #A5293E;
-}
-.greeting h2 {
-	margin: 0;
-	font-family: Itim;
-	font-size: 8em;
-}
-#social-media-links {
-	margin: 20px 0 20px 0;
-}
-#social-media-links a {
-	text-decoration: none;
-	color: white;
-}
-#social-media-links a:hover {
-	color: #6D8DAF;
-}
-article {
-	margin: 10px 0;
-}
-.content-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	height: 60px;
-	background-color: #213A54;
-}
-.content-container {
-	display: flex;
-	align-items: center;
-	background-color: #6D8DAF;
-	height: 400px;
-}
-.content-header h3 {
-	margin: 0;
-}
-
-@media only screen and (max-width: 820px) {
-	.navbar h1 {
-		font-size: 3.8em;
+	header {
+		font-family: Comfortaa, sans-serif;
 	}
-	.navbar a {
-		font-size: 2em;
+		#logo {
+			display: flex;
+			align-items: center;
+			padding: .625em 5%;
+			width: 90%;
+			background-color: #1F2854;
+		}
+			#logo > h1 {
+				margin: 0;
+				font-size: 2.4em;
+				white-space: nowrap;
+			}
+		header > nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			padding: .625em 5%;
+			width: 90%;
+			flex-wrap: wrap;
+			background-color: #273370;
+		}
+			header > nav > a {
+				color: white;
+				text-decoration: none;
+				font-size: 1.2em;
+				padding: .5em;
+				padding-left: .875em;
+				border-radius: 10px;
+			}
+			header > nav > a:hover {
+				background-color: #3E50A5;
+				color: white;
+				text-decoration: none;
+			}
+				header > nav > a > .fa {
+					margin-left: .4em;
+				}
+	main {
+		width: 100%;
+		background-image: url("../images/confectionary.png");
+		border-top: 7px solid #3E50A5;
+		border-bottom: 7px solid #3E50A5;
+		height: 54vh;
+		overflow: scroll;
+	}
+		main > section {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			width: 100%;
+			height: 100%;
+		}
+		/*
+			#about {
+				background-color: rgba(0,0,0,0);
+			}
+			#education {
+				background-color: rgba(0,0,0,0.15);
+			}
+			#experience {
+				background-color: rgba(0,0,0,0.25);
+			}
+			#projects {
+				background-color: rgba(0,0,0,0.35);
+			}*/
+
+			.container {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				width: 30%;
+				height: 80%;
+			}
+				.container-head {
+					width: 100%;
+					height: 20%;
+					background-color: #303030;/*#273370*/
+					text-align: center;
+				}
+				.container-content {
+					background-color: #888;/*#3E50A5*/
+					padding: 0 5%;
+					width: 90%;
+					height: 80%;
+					overflow: scroll;
+				}
+				.container h1 {
+					margin: 0;
+				}
+
+	footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		padding: .625em 5%;
+		margin: 20px auto 0 auto;
+		width: 80%;
+		background-color: #273370;
+		border-radius: 10px;
+	}
+		footer > a {
+			font-size: 3em;
+			text-decoration: none;
+			color: white;
+		}
+		footer > a:hover {
+			color: #3E50A5;
+		}
+
+/*********** Mobile ***********/
+@media screen and (min-width: 320px) {
+	body {
+		font-size: 12px; 
+	}
+	#logo {
+		justify-content: space-between;
+	}
+	header > nav {
+		display: none;
+		flex-direction: column;
+	}
+	header > nav > a {
+		width: 100%;
+	}
+	.show-menu {
+		display: flex;
 	}
 }
-/*
-@media only screen and (max-width: 1000px) {
-
+/*********** Tablet ***********/
+@media screen and (min-width: 640px) {
+	#logo {
+		justify-content: space-around;
+	}
+	#nav-icon {
+		display: none;
+	}
+	.horizontal-bar {
+		height: 50px;
+	}
+	header > nav {
+		display: flex;
+		flex-direction: row;
+	}
+	header > nav > a {
+		width: auto;
+	}
 }
-@media only screen and (max-width: 900px) {
-
+/*********** Small Desktop ***********/
+@media screen and (min-width: 720px) {
+	body {
+		font-size: 14px; 
+	}
 }
-@media only screen and (max-width: 870px) {
-THIS IS WHERE YOU'LL ADD THE HAMBURGER ICON
-}*/
+/*********** Full Desktop ***********/
+@media screen and (min-width: 840px) {
+	body {
+		font-size: 16px; 
+	}
+}
