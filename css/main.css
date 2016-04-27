@@ -1,57 +1,56 @@
 body {
-	background-color: #1F2854;
 	color: white;
 	font-family: Open Sans, sans-serif;
 	font-weight: 300;
-	font-size: 10px;
+	/*background-image: url("../images/confectionary.png");*/
+	background-color: white;
 }
 	header {
 		font-family: Comfortaa, sans-serif;
+		border-bottom: 4px solid rgba(62, 80, 165, 1);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 99999;
 	}
 		#logo {
 			display: flex;
 			align-items: center;
-			padding: .625em 5%;
-			width: 90%;
-			background-color: #1F2854;
+			padding: 0 5%;
+			box-sizing: border-box;
+			width: 100%;
+			height: 40px;
+			background-color: rgba(31, 40, 84, 1);
+			font-size: 22px;
+			white-space: nowrap;
 		}
-			#logo > h1 {
-				margin: 0;
-				font-size: 2.4em;
-				white-space: nowrap;
-			}
 		header > nav {
 			display: flex;
 			align-items: center;
-			justify-content: space-around;
-			padding: .625em 5%;
-			width: 90%;
+			justify-content: space-between;
+			padding: 0 5%;
+			box-sizing: border-box;
+			width: 100%;
+			height: 40px;
 			flex-wrap: wrap;
-			background-color: #273370;
+			background-color: rgba(39, 51, 112, 1);
 		}
 			header > nav > a {
 				color: white;
 				text-decoration: none;
-				font-size: 1.2em;
-				padding: .5em;
-				padding-left: .875em;
+				font-size: 14px;
+				padding: 6px 6px 6px 8px;
 				border-radius: 10px;
 			}
 			header > nav > a:hover {
 				background-color: #3E50A5;
-				color: white;
-				text-decoration: none;
 			}
 				header > nav > a > .fa {
-					margin-left: .4em;
+					margin-left: 6px;
 				}
 	main {
 		width: 100%;
-		background-image: url("../images/confectionary.png");
-		border-top: 7px solid #3E50A5;
-		border-bottom: 7px solid #3E50A5;
-		height: 54vh;
-		overflow: scroll;
 	}
 		main > section {
 			display: flex;
@@ -60,67 +59,11 @@ body {
 			width: 100%;
 			height: 100%;
 		}
-		/*
-			#about {
-				background-color: rgba(0,0,0,0);
-			}
-			#education {
-				background-color: rgba(0,0,0,0.15);
-			}
-			#experience {
-				background-color: rgba(0,0,0,0.25);
-			}
-			#projects {
-				background-color: rgba(0,0,0,0.35);
-			}*/
-
-			.container {
-				display: flex;
-				flex-direction: column;
-				align-items: flex-start;
-				width: 30%;
-				height: 80%;
-			}
-				.container-head {
-					width: 100%;
-					height: 20%;
-					background-color: #303030;/*#273370*/
-					text-align: center;
-				}
-				.container-content {
-					background-color: #888;/*#3E50A5*/
-					padding: 0 5%;
-					width: 90%;
-					height: 80%;
-					overflow: scroll;
-				}
-				.container h1 {
-					margin: 0;
-				}
-
-	footer {
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-		padding: .625em 5%;
-		margin: 20px auto 0 auto;
-		width: 80%;
-		background-color: #273370;
-		border-radius: 10px;
-	}
-		footer > a {
-			font-size: 3em;
-			text-decoration: none;
-			color: white;
-		}
-		footer > a:hover {
-			color: #3E50A5;
-		}
 
 /*********** Mobile ***********/
 @media screen and (min-width: 320px) {
 	body {
-		font-size: 12px; 
+		font-size: 12px;
 	}
 	#logo {
 		justify-content: space-between;
@@ -158,12 +101,27 @@ body {
 /*********** Small Desktop ***********/
 @media screen and (min-width: 720px) {
 	body {
-		font-size: 14px; 
+		font-size: 14px;
 	}
 }
 /*********** Full Desktop ***********/
 @media screen and (min-width: 840px) {
 	body {
-		font-size: 16px; 
+		font-size: 16px;
 	}
+}
+#resume-pdf-container {
+	padding-top: 84px;
+	box-sizing: border-box;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+#resume-pdf {
+	width: 100%;
+	height: 100%;
 }
