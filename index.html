@@ -6,16 +6,247 @@
 	<meta charset="utf=8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link href='https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans:300,400' rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+	<script src="js/index.js"></script>
 </head>
 
 <body>
 	<header>
-		<div id="logo">Morgan Muyskens</div>
+		<div>
+			<a href="" id="link-home">Morgan Muyskens</a>
+			<nav>
+				<a href="" id="link-education">Education</a>
+				<a href="" id="link-experience">Experience</a>
+				<a href="" id="link-activities">Activities</a>
+				<a href="" id="link-projects">Projects</a>
+				<a href="" id="link-resume">Resume</a>
+			</nav>
+		</div>
 	</header>
+
 	<main>
-		<iframe id="resume" src="https://drive.google.com/viewerng/viewer?url=http://muyskens.me/Resume.pdf?pid=explorer&efh=false&a=v&chrome=false&embedded=true">
+		<div id="home">
+
+		</div>
+		<div id="education">
+			<h1>Education</h1>
+			<div class="item">
+				<div class="heading">
+					<a href="http://www.egr.msu.edu/" target="_blank">
+						<p>Michigan State University - College of Engineering</p>
+						<img src="assets/ic_external_site.svg" width="10px" height="10px" alt="Icon designates clicking previous text will open an external page.">
+					</a>
+					<p>East Lansing, MI</p>
+				</div>
+				<div class="role">
+					<p><em>Bachelor of Science: Computer Science</em></p>
+					<p>August 2014 – May 2018</p>
+				</div>
+				<div class="role border">
+					<p><em>Minor in Game Design and Development</em></p>
+					<p>3.52/4.0 cumulative GPA</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="heading">
+					<a href="http://www.westshore.edu/" target="_blank">
+						<p>West Shore Community College</p>
+						<img src="assets/ic_external_site.svg" width="10px" height="10px" alt="Icon designates clicking previous text will open an external page.">
+					</a>
+					<p>Scottville, MI</p>
+				</div>
+				<div class="role border">
+					<p><em>General Studies</em></p>
+					<p>August 2013 – May 2014, Summer 2015</p>
+				</div>
+<!-- 				<div class="role">
+					<p><em>General Studies</em></p>
+					<p>August 2013 – May 2014, Summer 2015</p>
+				</div>
+				<div class="role border">
+					<p>&nbsp;</p>
+					<p>3.??/4.0 cumulative GPA</p>
+				</div> -->
+			</div>
+			<div class="item">
+				<div class="heading">
+					<a href="http://mccschools.org/" target="_blank">
+						<p>Mason County Central High School</p>
+						<img src="assets/ic_external_site.svg" width="10px" height="10px" alt="Icon designates clicking previous text will open an external page.">
+					</a>
+					<p>Scottville, MI</p>
+				</div>
+				<div class="role">
+					<p><em>High School Diploma</em></p>
+					<p>September 2010 – May 2014</p>
+				</div>
+				<div class="role border">
+					<p>&nbsp;</p>
+					<p>3.87/4.0 cumulative GPA</p>
+				</div>
+			</div>
+		</div>
+		<div id="experience">
+			<h1>Experience</h1>
+			<div class="item">
+				<div class="heading">
+					<a href="https://www.humana.com/" target="_blank">
+						<p>Humana</p>
+						<img src="assets/ic_external_site.svg" width="10px" height="10px" alt="Icon designates clicking previous text will open an external page.">
+					</a>
+					<p>Louisville, KY</p>
+				</div>
+				<div class="role border">
+					<p><em>Advanced Mobile Applications Intern</em></p>
+					<p>August 2016 - Present</p>
+				</div>
+				<div class="description">
+					<ul>
+						<li>Works remotely over the school year, but was on-site during summer 2017.</li>
+						<li>Enhances the MyHumana and Go365 mobile apps which have a combined total of over 50,000 daily active users.</li>
+						<li>Development includes front-end work primarily for Android and back-end microservices work in C#.</li>
+						<li>Utilizes Extreme Programming (XP) methodologies such as test-driven development, paired programming, code peer reviews, and week-long development cycles.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<div class="heading">
+					<a href="https://www.humana.com/" target="_blank">
+						<p>Humana</p>
+						<img src="assets/ic_external_site.svg" width="10px" height="10px" alt="Icon designates clicking previous text will open an external page.">
+					</a>
+					<p>Louisville, KY</p>
+				</div>
+				<div class="role border">
+					<p><em>Mobile Applications Intern</em></p>
+					<p>May 2016 - August 2016</p>
+				</div>
+				<div class="description">
+					<ul>
+						<li>Built a proof of concept Android application that was demoed at the end of the summer internship.</li>
+						<li>Developed a Java RESTful API hosted on Pivotal Cloud Foundry which was consumed by our Android app.</li>
+						<li>Attended product meetings, collaborated with designers, and worked alongside three other IT interns.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<div class="heading">
+					<a href="http://matrix.msu.edu/" target="_blank">
+						<p>Matrix: Center for Digital Humanities &amp; Social Science</p>
+						<img src="assets/ic_external_site.svg" width="10px" height="10px" alt="Icon designates clicking previous text will open an external page.">
+					</a>
+					<p>East Lansing, MI</p>
+				</div>
+				<div class="role border">
+					<p><em>Web Developer</em></p>
+					<p>October 2015 - May 2016</p>
+				</div>
+				<div class="description">
+					<ul>
+						<li>Created and maintained websites using PHP, HTML, CSS, and JavaScript.</li>
+						<li>Worked closely with a designer to ensure constructed sites matched compositions.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="activities">
+			<h1>Activities</h1>
+			<div class="item">
+				<div class="heading">
+					<a href="https://17.spartahack.com/" target="_blank">
+						<p>SpartaHack 2017 – MSU’s 3<sup>rd</sup> Annual Student-Run Hackathon</p>
+						<img src="assets/ic_external_site.svg" width="10px" height="10px" alt="Icon designates clicking previous text will open an external page.">
+					</a>
+					<p>East Lansing, MI</p>
+				</div>
+				<div class="role border">
+					<p><em>Android Developer</em></p>
+					<p>September 2016 - February 2017</p>
+				</div>
+				<div class="description">
+					<ul>
+						<li>Developed the SpartaHack 2017 Android application which had over 300 installs the weekend of the hackathon.</li>
+						<li>Used frameworks such as Retrofit, Realm, Butterknife, and Robolectric, and Junit for production.</li>
+						<li>Coordinated volunteers, managed help desk, and mentored during the weekend-long event.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<div class="heading">
+					<a href="http://www.spartanhackers.com/" target="_blank">
+						<p>Spartan Hackers</p>
+						<img src="assets/ic_external_site.svg" width="10px" height="10px" alt="Icon designates clicking previous text will open an external page.">
+					</a>
+					<p>East Lansing, MI</p>
+				</div>
+				<div class="role border">
+					<p><em>Community Chair</em></p>
+					<p>September 2015 – December 2016</p>
+				</div>
+				<div class="description">
+					<ul>
+						<li>Strengthened the MSU student body’s technological skills through hosting workshops and organizing hackathon trips.</li>
+						<li>Managed communication with other student groups and marketed through social media, flyers, and in-person events.</li>
+						<li>Presented a few workshops; Open APIs in Python, Advanced CSS, and more.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<div class="heading">
+					<a href="http://16.spartahack.com/" target="_blank">
+						<p>SpartaHack 2016 – MSU’s 2<sup>nd</sup> Annual Student-Run Hackathon</p>
+						<img src="assets/ic_external_site.svg" width="10px" height="10px" alt="Icon designates clicking previous text will open an external page.">
+					</a>
+					<p>East Lansing, MI</p>
+				</div>
+				<div class="role border">
+					<p><em>Marketing Organizer</em></p>
+					<p>September 2015 - February 2016</p>
+				</div>
+				<div class="description">
+					<ul>
+						<li>Promoted through social media, contacting organizations outside of MSU, speaking in classrooms, handing out/hanging flyers, and	other creative methods.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<div class="heading">
+					<a href="http://15.spartahack.com/" target="_blank">
+						<p>SpartaHack 2015 – MSU’s 1<sup>st</sup> Annual Student-Run Hackathon</p>
+						<img src="assets/ic_external_site.svg" width="10px" height="10px" alt="Icon designates clicking previous text will open an external page.">
+					</a>
+					<p>East Lansing, MI</p>
+				</div>
+				<div class="role border">
+					<p><em>Help Desk</em></p>
+					<p>March 2015</p>
+				</div>
+				<div class="description">
+					<ul>
+						<li>Provided information to attendees and coordinated volunteers.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="projects">
+			<h1>Projects</h1>
+			<p>Currently updating this section. Please check back later! :)</p>
+		</div>
+		<div id="resume">
+			<iframe src="https://drive.google.com/viewerng/viewer?url=http://muyskens.me/Resume.pdf?pid=explorer&efh=false&a=v&chrome=false&embedded=true">
+		</div>
 	</main>
+
+	<footer>
+		<a href=""><img src="" /></a>
+		<a href=""><img src="" /></a>
+		<a href=""><img src="" /></a>
+	</footer>
 </body>
+
 </html>
