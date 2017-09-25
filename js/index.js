@@ -1,31 +1,32 @@
-var site;
+let site;
 
 $(document).ready(function() {
     site = new Site();
-    resize();
+    let spirograph = new Spirograph();
+    spirograph.create();
+    // resize();
 });
 
-$(window).resize(function () {
-  resize();
-});
+// $(window).resize(function () {
+//   resize();
+// });
 
-function resize() {
-  if ($(window).width() <= 880 && !$("body").hasClass("mobile")) {
-    $("body").addClass("mobile");
-    site.present("resume");
-  } else if ($(window).width() > 880 && $("body").hasClass("mobile")) {
-    $("body").removeClass("mobile");
-  }
-}
+// function resize() {
+  // if ($(window).width() <= 880 && !$("body").hasClass("mobile")) {
+  //   $("body").addClass("mobile");
+  // } else if ($(window).width() > 880 && $("body").hasClass("mobile")) {
+  //   $("body").removeClass("mobile");
+  // }
+// }
 
 function Site() {
     var that = this;
 
     $("#link-home").click(function (e) {
         e.preventDefault();
-        if (!$("body").hasClass("mobile")) {
+        // if (!$("body").hasClass("mobile")) {
           that.present("home");
-        }
+        // }
     });
 
     $("#link-education").click(function (e) {
@@ -48,17 +49,12 @@ function Site() {
         that.present("projects");
     });
 
-    $("#link-resume").click(function (e) {
-        e.preventDefault();
-        that.present("resume");
-    });
-
     this.present("home");
 }
 
 Site.prototype.present = function (page) {
   $("header > div > nav > a").removeClass("active");
   $("#link-" + page).addClass("active");
-  $("main > div").hide();
+  $("#content > div").hide();
   $("#" + page).show();
 };
