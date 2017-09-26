@@ -53,7 +53,7 @@ function Site() {
         that.present("resume");
     });
 
-    this.present("home");
+    this.present("education");
 }
 
 Site.prototype.present = function (page) {
